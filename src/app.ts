@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use("/api/weeks", weekRoutes);
 
-mongoose.connect(process.env.MONGODB_URI!)
+mongoose.connect(process.env.MONGO_URI!)
     .then((() => console.log("MongoDB connected")))
     .catch(err => console.error(err));
 
